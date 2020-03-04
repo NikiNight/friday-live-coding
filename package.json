@@ -16,5 +16,7 @@
   "bugs": {
     "url": "https://github.com/ViktoriyaVorozhun/friday-live-coding/issues"
   },
-  "homepage": "https://github.com/ViktoriyaVorozhun/friday-live-coding#readme"
+  "homepage": "https://github.com/ViktoriyaVorozhun/friday-live-coding#readme",
+  "dependencies": {
+  }
 }

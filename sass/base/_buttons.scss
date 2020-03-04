@@ -1,5 +1,5 @@
 .button {
-    font-family: 'Open Sans', Verdana, sans-serif;
+    @extend %font-prim;
     padding: 11px 25px 13px;
     font-style: normal;
     font-weight: 600;
@@ -7,27 +7,41 @@
     line-height: 2.2rem;
     border-radius: 4px;
     cursor: pointer;
-    transition: all .3s;
+    @extend %transition;
+    &_bordered {
+        background: $color-light;
+        border: 1px solid $color-border;
+        color: $color-text;
+        &:hover {
+            background: $color-hovered;
+            border-color: $color-hovered;
+        }
+    }
+    &_colored {
+        background: $color-primary;
+        color: $color-light;
+        border: 1px solid $color-primary;
+        &:hover {
+            background: $color-additional;
+            border-color: $color-additional;
+        }
+    }
 }
 
-.button_bordered {
-    background: $color-light;
-    border: 1px solid $color-border;
-    color: $color-text;
+.link-button {
+    color: $color-primary;
+    @extend %font-add;
+    display: inline-flex;
+    align-items: center;
+    transition: .3s;
+    &:hover {
+        color: $color-red;
+        .ico_play {
+            background-image: url("../img/icons/play-hover.svg");
+        }
+    }
 }
 
-.button_colored {
-    background: $color-primary;
-    color: $color-light;
-    border: 1px solid $color-primary;
-}
-
-.button_colored:hover {
-    background: $color-additional;
-    border-color: $color-additional;
-}
-
-.button_bordered:hover {
-    background: $color-hovered;
-    border-color: $color-hovered;
+.link-button__text {
+    margin-left: 9px;
 }

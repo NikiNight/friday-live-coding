@@ -12,6 +12,22 @@
     padding-right: 65px;
 }
 
+.promo__title {
+    margin: 0 0 30px;
+}
+
+.promo__buttons {
+    display: flex;
+    align-items: center;
+}
+
 .promo__buttons>* {
     margin-right: 44px;
+}
+
+.promo__text {
+    max-width: 487px;
+    margin: 0 0 45px;
+    @extend %font-add;
+    @include font($size: 1.8rem, $height: 2.8rem, $weight: normal)
 }
