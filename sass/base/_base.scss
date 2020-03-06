@@ -10,18 +10,30 @@ body {
 h1 {
     @extend %font-add;
     @include font($height: 5.4rem, $size: 4.4rem);
+    @include media-mobile {
+        @include font($height: 4.2rem, $size: 3.2rem);
+    }
 }
 
 h2 {
     @include font($size: 3.4rem, $height: 4.6rem);
+    @include media-mobile {
+        @include font($height: 3.3rem, $size: 2.4rem);
+    }
 }
 
 h3 {
     @include font($size: 2.4rem, $height: 3.4rem);
+    @include media-mobile {
+        @include font($height: 3.1rem, $size: 2.1rem);
+    }
 }
 
 h4 {
     @include font($size: 2.2rem, $height: 3.0rem, $weight: 600);
+    @include media-tablet {
+        @include font($height: 3.0rem, $size: 2.0rem);
+    }
 }
 
 h5 {
