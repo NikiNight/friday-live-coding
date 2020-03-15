@@ -8,6 +8,7 @@
 .tag {
     border-radius: 90px;
     padding: 0 14px;
+    cursor: pointer;
     @include font($size: 1.3rem, $height: 2.8rem, $weight: normal);
 
     &_selected {

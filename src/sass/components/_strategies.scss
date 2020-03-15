@@ -38,6 +38,9 @@
     display: flex;
     flex-direction: column;
     position: relative;
+    &_hidden {
+        display: none;
+    }
     @include media-tablet {
         overflow: hidden;
         padding-top: 200px;
@@ -61,5 +64,27 @@
     @include media-tablet {
         position: absolute;
         top: 0;
+    }
+}
+
+.article-modal__content {
+    .strategy__image {
+        width: 100%;
+        @include media-tablet {
+            position: static;
+        }
+    }
+
+    .strategy__date {
+        @include font ($size: 1.3rem, $weight: normal);
+        margin: 0 0 5px;
+    }
+
+    .strategy__name {
+        margin-bottom: 10px;
+    }
+
+    .strategy__text {
+        margin: 0 0 12px;
     }
 }

@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "style": "sass --watch sass/style.scss sass/style.css",
+    "style": "sass --watch src/sass/style.scss src/sass/style.css",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -18,5 +18,6 @@
   },
   "homepage": "https://github.com/ViktoriyaVorozhun/friday-live-coding#readme",
   "dependencies": {
+    "webpack": "^4.42.0"
   }
 }

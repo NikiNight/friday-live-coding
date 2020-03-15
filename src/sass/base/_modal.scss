@@ -1,0 +1,36 @@
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: $color-overlay;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.modal {
+    position: relative;
+    border-radius: 10px;
+    background-color: $color-light;
+    width: 675px;
+    min-height: 120px;
+    max-height: 90%;
+    overflow: auto;
+    @extend %custom-scroll;
+
+    @include media-tablet {
+        width: 90%;
+    }
+}
+
+.modal__close-icon {
+    position: absolute;
+    top: 30px;
+    right: 26px;
+    cursor: pointer;
+    svg {
+        pointer-events: none;
+    }
+}
